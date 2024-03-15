@@ -1,1 +1,19 @@
+klonowanie repozytorium
 git clone https://github.com/konradhanus/GTA7.git
+
+
+dodanie wszystkich plikow do commita
+git add .
+
+nadanie nazywa commita
+git commit -m "nazwa komita"
+
+wysylanie na server comita
+git push
+
+pobranie zmian ktore sa na serwerze
+git pull
+
+
+sprawdzenie co bylo zmodyfikowane od ostatniego pusha
+git status
