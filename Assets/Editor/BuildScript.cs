@@ -47,7 +47,7 @@ public class BuildScript
     [MenuItem("Custom/Build iOS")]
     static void iOS()
     {
-        CheckDir("Scratch/Xcode");
-        BuildPipeline.BuildPlayer(GetScenes(), "Scratch/Xcode", BuildTarget.iOS, BuildOptions.None);
+        CheckDir("../../../Dekstop/BuildJenkins/GTA7/Scratch/Xcode");
+        BuildPipeline.BuildPlayer(GetScenes(), "../../../Dekstop/BuildJenkins/GTA7/Scratch/Xcode", BuildTarget.iOS, BuildOptions.None);
     }
 }
