@@ -41,13 +41,13 @@ public class BuildScript
         //PlayerSettings.Android.keyaliasPass =
         //    PlayerSettings.Android.keystorePass = "hcents3@";
         //PlayerSettings.Android.keystoreName = Path.GetFullPath(@"NuGet\Android\Epic2.keystore").Replace('\\', '/');
-        BuildPipeline.BuildPlayer(GetScenes(), "build/UnityBuild.apk", BuildTarget.Android, BuildOptions.None);
+        BuildPipeline.BuildPlayer(GetScenes(), "build/UnityBuild.apk", BuildTarget.Android, BuildOptions.AcceptExternalModificationsToPlayer);
     }
 
     [MenuItem("Custom/Build iOS")]
     static void iOS()
     {
         CheckDir("/Users/konradhanus/Desktop/BuildJenkins/GTA7/Scratch/Xcode");
-        BuildPipeline.BuildPlayer(GetScenes(), "/Users/konradhanus/Desktop/BuildJenkins/GTA7/Scratch/Xcode", BuildTarget.iOS, BuildOptions.None);
+        BuildPipeline.BuildPlayer(GetScenes(), "/Users/konradhanus/Desktop/BuildJenkins/GTA7/Scratch/Xcode", BuildTarget.iOS, BuildOptions.AcceptExternalModificationsToPlayer);
     }
 }
